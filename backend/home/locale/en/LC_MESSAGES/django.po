@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-01 13:15+0900\n"
+"POT-Creation-Date: 2022-08-30 16:51+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,70 +18,59 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\templates\home\home_page.html:25
-msgid "Мондино Технолоджес - мобильные технологии на страже вашего здоровья."
-msgstr "Mondino Technologies - mobile technologies to guard your health."
+#: home/templates/home/home_page.html:25
+msgid "Создаем мобильные приложения, которыми пользуются миллионы."
+msgstr "We create mobile application used by millions"
 
-#: .\templates\home\home_page.html:50
-msgid "Онкопоиск"
-msgstr "OncoSearchSakha"
+#: home/templates/home/home_page.html:30
+msgid "Помогаем фудтеху, ритейлу, банкам становится лидерами отраслей."
+msgstr "We help foodtech, retail, banks to become leaders"
 
-#: .\templates\home\home_page.html:57
-msgid "Vivat Аптека"
-msgstr "Vivat Pharmacy"
+#: home/templates/home/home_page.html:55 home/templates/home/home_page.html:145
+msgid "VIVAT АПТЕКА"
+msgstr "VIVAT PHARMACY"
 
-#: .\templates\home\home_page.html:64
-msgid "Скрининг Глаукомы"
-msgstr "Glaucoma Screening"
+#: home/templates/home/home_page.html:62
+msgid "СКРИНИНГ ГЛАУКОМЫ"
+msgstr "GLAUCOMA SCREENING"
 
-#: .\templates\home\home_page.html:71
-msgid "Женское Здоровье"
-msgstr "Female Health"
+#: home/templates/home/home_page.html:69 home/templates/home/home_page.html:215
+msgid "ЖЕНСКОЕ ЗДОРОВЬЕ"
+msgstr "FEMALE HEALTH"
 
-#: .\templates\home\home_page.html:78
-msgid "Ты Не Один"
-msgstr "You Are Not Alone"
+#: home/templates/home/home_page.html:76 home/templates/home/home_page.html:191
+msgid "ТЫ НЕ ОДИН"
+msgstr "YOU ARE NOT ALONE"
 
-#: .\templates\home\home_page.html:90
-msgid "MONDINO ТРЕКЕР ЗДОРОВЬЯ"
-msgstr "MONDINO HEALTH TRACKER"
+#: home/templates/home/home_page.html:83
+msgid "ОНКОПОИСКСАХА"
+msgstr "ONCOSEARCHSAKHA"
 
-#: .\templates\home\home_page.html:95
+#: home/templates/home/home_page.html:99
 msgid ""
-"Персональный медицинский Трекер. Следите за своим здоровьем и за лечением "
-"ваших близких онлайн."
+"Карманный помощник для людей с питомцами. Полезные советы, информации для "
+"хозяев."
 msgstr ""
-"Personal medical tracker. Monitor your health and the treatment of "
-"your loved ones online."
+"Pocker helper for people with pets. Useful tips, information for them."
 
-#: .\templates\home\home_page.html:100 .\templates\home\home_page.html:129
-#: .\templates\home\home_page.html:170 .\templates\home\home_page.html:192
-#: .\templates\home\home_page.html:216 .\templates\home\home_page.html:238
+#: home/templates/home/home_page.html:103
+#: home/templates/home/home_page.html:132
+#: home/templates/home/home_page.html:154
+#: home/templates/home/home_page.html:178
+#: home/templates/home/home_page.html:200
+#: home/templates/home/home_page.html:223
 msgid "Перейти на сайт"
 msgstr "Go to the site"
 
-#: .\templates\home\home_page.html:106 .\templates\home\home_page.html:135
-msgid "Скачайте наше приложение:"
-msgstr "Download our app:"
+#: home/templates/home/home_page.html:106
+msgid "Политика конфиденциальности"
+msgstr "Privacy policy"
 
-#: .\templates\home\home_page.html:120
-msgid "MONDINO ВРАЧ"
-msgstr "MONDINO DOCTOR"
-
-#: .\templates\home\home_page.html:125
-msgid ""
-"С помощью нескольких простых действий вы сможете добавлять лекарства "
-"пациенту, получать напоминания о приеме таблеток и постоянно видеть динамику "
-"его лечения."
-msgstr ""
-"With a few simple steps, you can select medications for patient, get "
-"notification of taking pills and keep track of treatment progress."
-
-#: .\templates\home\home_page.html:161
+#: home/templates/home/home_page.html:123
 msgid "СКРИНИНГ И РАННЯЯ ДИАГНОСТИКА РАКА В ЯКУТИИ"
 msgstr "SCREENING AND EARLY DIAGNOSIS OF CANCER IN YAKUTIA"
 
-#: .\templates\home\home_page.html:165
+#: home/templates/home/home_page.html:127
 msgid ""
 "Скрининговый проект «ОНКОПОИСК» ориентирован на выявление предраковых "
 "состояний и раннего рака. Цель проекта – выявить заболевание как можно "
@@ -91,11 +80,7 @@ msgstr ""
 "conditions and early stages of cancer. Goal of the project is to identify "
 "the disease as earlier as possible, make diagnosis without delay."
 
-#: .\templates\home\home_page.html:183
-msgid "VIVAT АПТЕКА"
-msgstr "VIVAT PHARMACY"
-
-#: .\templates\home\home_page.html:187
+#: home/templates/home/home_page.html:149
 msgid ""
 "Интернет - аптека Виват предоставляет возможность не выходя из дома узнать о "
 "скидках аптеки, заказать экспресс- доставку товаров аптеки до двери, "
@@ -105,11 +90,11 @@ msgstr ""
 "to make express delivery order of pharmacy goods to your door, through "
 "integration with delivery service."
 
-#: .\templates\home\home_page.html:207
+#: home/templates/home/home_page.html:169
 msgid "Скрининговый сервис по выявлению глаукомы"
 msgstr "Screening service to identify glaucoma"
 
-#: .\templates\home\home_page.html:211
+#: home/templates/home/home_page.html:173
 msgid ""
 "Разработка и внедрение медицинских сервисов выполняющие функции диагностики, "
 "дистанционного мониторинга и информацией об пациентов имеющих заболевание "
@@ -122,25 +107,17 @@ msgstr ""
 "clinical conditions and getting (or finished) certain treating, who on file "
 "in healthcare system."
 
-#: .\templates\home\home_page.html:229
-msgid "ТЫ НЕ ОДИН"
-msgstr "YOU ARE NOT ALONE"
-
-#: .\templates\home\home_page.html:233
+#: home/templates/home/home_page.html:195
 msgid ""
 "В рамках реализации национального проекта «Здравоохранение» разработали "
 "пилотный проект «Ты не один», основным направлением которого является "
 "онкопсихологическая помощь для больных и их близких."
 msgstr ""
 "As part of realisation of national project \"Healthcare\" we developed pilot "
-"project \"You are not alone\", main direction of it is psychological care for "
-"cancer patients and their loved ones."
+"project \"You are not alone\", main direction of it is psychological care "
+"for cancer patients and their loved ones."
 
-#: .\templates\home\home_page.html:253
-msgid "ЖЕНСКОЕ ЗДОРОВЬЕ"
-msgstr "FEMALE HEALTH"
-
-#: .\templates\home\home_page.html:257
+#: home/templates/home/home_page.html:219
 msgid ""
 "Проект «Женское здоровье» разработан для сохранения и укрепления здоровья "
 "женского населения Республики Саха (Якутия). Цель проекта - сохранение "
@@ -151,3 +128,89 @@ msgstr ""
 "part of population in Republic of Sakha (Yakutia). Goal of the project is to "
 "save reproductive health of women and early diagnosis diseases of female "
 "organs."
+
+#: home/templates/home/welcome_page.html:6
+msgid "Visit the Wagtail website"
+msgstr ""
+
+#: home/templates/home/welcome_page.html:15
+msgid "View the release notes"
+msgstr ""
+
+#: home/templates/home/welcome_page.html:27
+msgid "Welcome to your new Wagtail site!"
+msgstr ""
+
+#: home/templates/home/welcome_page.html:28
+msgid ""
+"Please feel free to <a href=\"https://github.com/wagtail/wagtail/wiki/Slack"
+"\">join our community on Slack</a>, or get started with one of the links "
+"below."
+msgstr ""
+
+#: home/templates/home/welcome_page.html:35
+msgid "Wagtail Documentation"
+msgstr ""
+
+#: home/templates/home/welcome_page.html:36
+msgid "Topics, references, & how-tos"
+msgstr ""
+
+#: home/templates/home/welcome_page.html:42
+msgid "Tutorial"
+msgstr ""
+
+#: home/templates/home/welcome_page.html:43
+msgid "Build your first Wagtail site"
+msgstr ""
+
+#: home/templates/home/welcome_page.html:49
+msgid "Admin Interface"
+msgstr ""
+
+#: home/templates/home/welcome_page.html:50
+msgid "Create your superuser first!"
+msgstr ""
+
+#~ msgid ""
+#~ "Мондино Технолоджес - мобильные технологии на страже вашего здоровья."
+#~ msgstr "Mondino Technologies - mobile technologies to guard your health."
+
+#~ msgid "Онкопоиск"
+#~ msgstr "OncoSearchSakha"
+
+#~ msgid "Vivat Аптека"
+#~ msgstr "Vivat Pharmacy"
+
+#~ msgid "Скрининг Глаукомы"
+#~ msgstr "Glaucoma Screening"
+
+#~ msgid "Женское Здоровье"
+#~ msgstr "Female Health"
+
+#~ msgid "Ты Не Один"
+#~ msgstr "You Are Not Alone"
+
+#~ msgid "MONDINO ТРЕКЕР ЗДОРОВЬЯ"
+#~ msgstr "MONDINO HEALTH TRACKER"
+
+#~ msgid ""
+#~ "Персональный медицинский Трекер. Следите за своим здоровьем и за лечением "
+#~ "ваших близких онлайн."
+#~ msgstr ""
+#~ "Personal medical tracker. Monitor your health and the treatment of your "
+#~ "loved ones online."
+
+#~ msgid "Скачайте наше приложение:"
+#~ msgstr "Download our app:"
+
+#~ msgid "MONDINO ВРАЧ"
+#~ msgstr "MONDINO DOCTOR"
+
+#~ msgid ""
+#~ "С помощью нескольких простых действий вы сможете добавлять лекарства "
+#~ "пациенту, получать напоминания о приеме таблеток и постоянно видеть "
+#~ "динамику его лечения."
+#~ msgstr ""
+#~ "With a few simple steps, you can select medications for patient, get "
+#~ "notification of taking pills and keep track of treatment progress."

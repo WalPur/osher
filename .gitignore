@@ -21,3 +21,4 @@ src/media_root
 .webassets-cache/*
 /static/.webassets-cache/*
 /applications/django-web/src.sock
+/infrastucture/

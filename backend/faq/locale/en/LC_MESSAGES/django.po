@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-01 17:22+0900\n"
+"POT-Creation-Date: 2022-08-30 16:51+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,14 +18,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\templates\faq\legal_page.html:12
+#: faq/templates/faq/legal_page.html:12
 msgid "Правовая информация"
 msgstr "Legal infomation"
 
-#: .\templates\faq\legal_page.html:17
+#: faq/templates/faq/legal_page.html:17
 msgid "Политика конфиденциальности"
 msgstr "Privacy police"
 
-#: .\templates\faq\legal_page.html:40
+#: faq/templates/faq/legal_page.html:40
 msgid "Пользовательское соглашение"
 msgstr "End-user license agreement"

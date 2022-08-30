@@ -2,13 +2,13 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-01 15:51+0900\n"
+"POT-Creation-Date: 2022-08-30 16:51+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,66 +18,66 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\templates\footer.html:17
+#: src/templates/footer.html:17
 msgid "Компания"
 msgstr "Company"
 
-#: .\templates\footer.html:23 .\templates\header.html:21
+#: src/templates/footer.html:23 src/templates/header.html:22
 msgid "Главная"
 msgstr "Main page"
 
-#: .\templates\footer.html:26
+#: src/templates/footer.html:26
 msgid "О компании"
 msgstr "About company"
 
-#: .\templates\footer.html:29
-msgid "Блог"
-msgstr "Blog"
+#: src/templates/footer.html:29
+msgid "Контакты"
+msgstr "Contacs"
 
-#: .\templates\footer.html:32 .\templates\header.html:34
-msgid "Правовая информация"
-msgstr "Legal information"
-
-#: .\templates\footer.html:41 .\templates\header.html:39
+#: src/templates/footer.html:38 src/templates/header.html:40
 msgid "Проекты"
 msgstr "Projects"
 
-#: .\templates\footer.html:50 .\templates\header.html:44
-msgid "ОнкоПоискСаха"
-msgstr "OncoSearchSakha"
-
-#: .\templates\footer.html:53 .\templates\header.html:43
-msgid "Совместимость"
-msgstr "Compatibility"
-
-#: .\templates\footer.html:56 .\templates\header.html:45
+#: src/templates/footer.html:47 src/templates/header.html:44
 msgid "Vivat Аптека"
 msgstr "Vivat Pharmacy"
 
-#: .\templates\footer.html:59 .\templates\header.html:46
+#: src/templates/footer.html:50 src/templates/header.html:45
 msgid "Скрининг Глаукомы"
 msgstr "Glaucoma Screening"
 
-#: .\templates\footer.html:62 .\templates\header.html:47
+#: src/templates/footer.html:53 src/templates/header.html:46
 msgid "Женское Здоровье"
 msgstr "Female Health"
 
-#: .\templates\footer.html:65 .\templates\header.html:48
+#: src/templates/footer.html:56 src/templates/header.html:47
 msgid "Ты Не Один"
 msgstr "You Are Not Alone"
 
-#: .\templates\footer.html:74
-msgid "Скачайте Mondino трекер:"
-msgstr "Download Mondino tracker:"
+#: src/templates/footer.html:59 src/templates/header.html:48
+msgid "ОнкоПоискСаха"
+msgstr "OncoSearchSakha"
 
-#: .\templates\footer.html:97
+#: src/templates/footer.html:69
 msgid "Все права защищены"
 msgstr "All rights reserver"
 
-#: .\templates\footer.html:99
+#: src/templates/footer.html:71
 msgid "Политика конфиденциальности"
 msgstr "Privacy policy"
 
-#: .\templates\footer.html:99
-msgid "Лицензионное соглашение"
-msgstr "End-user license agreement"
+#: src/templates/header.html:35
+msgid "Правовая информация"
+msgstr "Legal information"
+
+#~ msgid "Блог"
+#~ msgstr "Blog"
+
+#~ msgid "Совместимость"
+#~ msgstr "Compatibility"
+
+#~ msgid "Скачайте Mondino трекер:"
+#~ msgstr "Download Mondino tracker:"
+
+#~ msgid "Лицензионное соглашение"
+#~ msgstr "End-user license agreement"
