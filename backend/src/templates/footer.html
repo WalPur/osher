@@ -1,0 +1,75 @@
+{% load static wagtailuserbar %}
+{% load i18n %}
+<footer class="footer py-8 py-md-11">
+  <div class="container-lg">
+    <div class="row justify-content-between">
+      <div class="col-md-auto">
+
+
+        <img src="{% static 'img/footer/logo.svg'  %}" alt="" style="width: 100%; height: auto">
+
+
+      </div>
+      <div class="row">
+        <div class="col-auto col">
+
+          <h6 class="text-uppercase mb-3 mb-md-5">
+            {% trans "Компания" %}
+          </h6>
+
+
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              <a href="/">{% trans "Главная" %}</a>
+            </li>
+            <li class="mb-3">
+              <a href="/team">{% trans "О компании" %}</a>
+            </li>
+          <li class="mb-3">
+            <a href="/contacts">{% trans "Контакты" %}</a>
+          </li>
+        </ul>
+
+        </div>
+        <div class="col-auto col">
+
+
+          <h6 class="text-uppercase mb-3 mb-md-5">
+            {% trans "Проекты" %}
+          </h6>
+
+
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              <a href="#">Mobivet</a>
+            </li>
+            <li class="mb-3">
+              <a href="http://xn----7sbbagaytx2c4ad.xn--p1ai/">{% trans "Vivat Аптека" %}</a>
+            </li>
+            <li class="mb-3">
+              <a href="https://xn--80aaaal7bfkr6ar4a.xn--p1ai/">{% trans "Скрининг Глаукомы" %}</a>
+            </li>
+            <li class="mb-3">
+              <a href="https://xn-----8kcahlfadeo7a1bpea7akm5f8g.xn--p1ai/">{% trans "Женское Здоровье" %}</a>
+            </li>
+            <li class="mb-3">
+              <a href="http://xn--80aakdq1adf4ad5b1d.xn--p1ai/">{% trans "Ты Не Один" %}</a>
+            </li>
+            <li class="mb-3">
+              <a href="https://xn--80aawhbpgcajyb7c.xn--p1ai/">{% trans "ОнкоПоискСаха" %}</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-auto">+7 914 278 64 40</div>
+      <div class="col-auto">osher.tech@gmail.com</div>
+      <div class="col-auto">© Osher technologies. {% trans "Все права защищены" %}</div>
+      <div class="col-auto">
+        <a href="/policy">{% trans "Политика конфиденциальности" %}</a>
+      </div>
+    </div>
+  </div>
+</footer>

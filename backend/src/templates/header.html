@@ -1,0 +1,75 @@
+{% load i18n wagtailcore_tags %}
+{% load static wagtailuserbar %}
+{% load menu_tags %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand d-lg-none" href="/"><img src="{% static 'img/header/logo.png' %}" alt=""></a>
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+
+            <img src="{% static 'img/header/logo.png' %}" class=".d-none .d-lg-block .d-xl-none logoCollapse" alt="">
+
+            <ul id="navbar-nav" class="navbar-nav flex-nowrap w-100 justify-content-end align-items-center">
+                <li>
+                    <a class="nav-link{% if request.path|slice:"3:" == "/" %} actLink{% endif %}" role="button" aria-haspopup="true" aria-expanded="false" href="/{{ LANGUAGE_CODE }}/">{% trans "Главная" %}</a>
+                </li>
+                {% comment %} <a class="navbar-brand d-none d-lg-block px-lg-6" href="/" style="font-family: sans-serif;">Главная</a> {% endcomment %}
+                {% for menu in main_menu.items %}
+                <li>
+                    <a class="nav-link{% if request.path == menu.href %} actLink{% endif %}" role="button" aria-haspopup="true" aria-expanded="false" href="{{ menu.href }}">
+                        {{ menu.text }}
+                    </a>
+                </li>
+                {% endfor %}
+                <li>
+                    <a class="nav-link{% if request.path|slice:"3:" == "/legal-page/" %} actLink{% endif %}" role="button" aria-haspopup="true" aria-expanded="false" href="/{{ LANGUAGE_CODE }}/legal-page">
+                        {% trans "Правовая информация" %}
+                    </a>
+                </li>
+                <li class="dropdown-li">
+                    <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {% trans "Проекты" %}
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">Mobivet</a>
+                        <a class="dropdown-item" href="http://xn----7sbbagaytx2c4ad.xn--p1ai/">{% trans "Vivat Аптека" %}</a>
+                        <a class="dropdown-item" href="https://xn--80aaaal7bfkr6ar4a.xn--p1ai/">{% trans "Скрининг Глаукомы" %}</a>
+                        <a class="dropdown-item" href="https://xn-----8kcahlfadeo7a1bpea7akm5f8g.xn--p1ai/">{% trans "Женское Здоровье" %}</a>
+                        <a class="dropdown-item" href="http://xn--80aakdq1adf4ad5b1d.xn--p1ai/">{% trans "Ты Не Один" %}</a>
+                        <a class="dropdown-item" href="https://xn--80aawhbpgcajyb7c.xn--p1ai/">{% trans "ОнкоПоискСаха" %}</a>
+                    </div>
+                </li>
+                <li class="d-flex flex-row">
+                    <a class="langTab {% if LANGUAGE_CODE == "ru" %}actLink{% endif %}" name="user-lang" id="rus" href="/ru{{ request.path|slice:"3:" }}" hreflang="ru" onclick="changeLang('rus')">RU</a>/
+                    <a class="langTab {% if LANGUAGE_CODE == "en" %}actLink{% endif %}" name="user-lang" id="eng" href="/en{{ request.path|slice:"3:" }}" hreflang="en" onclick="changeLang('eng')">EN</a>
+                    {% comment %} {% for language_code, language_name in LANGUAGES %}
+                        {% get_language_info for language_code as lang %}
+
+                        {% language language_code %}
+                            <a href="{% pageurl page.localized %}" rel="alternate" hreflang="{{ language_code }}">
+                                {{ lang.name_local }}
+                            </a>
+                        {% endlanguage %}
+                    {% endfor %} {% endcomment %}
+                </li>
+            </ul>
+            {% comment %} <button class="btn btn-outline-primary" style="border-radius: 20px;" onclick="Login()">
+                Вход
+            </button> {% endcomment %}
+        </div>
+
+    </div>
+    <script type="text/javascript">
+        function Login() {
+            location.href = "/registration"
+        }
+    </script>
+</nav>

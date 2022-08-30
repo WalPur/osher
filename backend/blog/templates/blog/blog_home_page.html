@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% load static wagtailuserbar %}
+{% load wagtailcore_tags wagtailimages_tags %}
+{% load blog_tags %}
+
+{% block body_class %}Blog Page{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% static 'css/blog/blog.css' %}">{% endblock %}
+
+{% block content %}
+{% if page.post_image %}
+{% image page.post_image width-500 %}
+{% endif %}
+
+{{ page.description|richtext }}
+<section class="blog__general">
+    <div class="pageWrapper blog__general-container">
+        <div class="blog__general-content">
+            <div class="blog__general-subtitle">
+                {% trans "Будь в курсе медицинских трендов вместе с нами" %}
+            </div>
+            <div class="blog__general-title">
+                {% trans "Наш блог" %}
+            </div>
+            <div class="blog__general-text">
+                {% trans "Здесь мы рассказываем обо всех трендах в медицине, о команде, опыте и в целом про нашу компанию ООО “Мондино Технолоджес”" %}
+            </div>
+        </div>
+    </div>
+</section>
+<section class="blog__content">
+    <div class="block__content-container">
+        {% get_showing_themes as themes %}
+
+        {% include 'blog/components/blog_custom_cards.html' %}
+
+        {% include 'blog/components/blog_actual_event.html' %}
+
+        {% for theme in themes %}
+        {% with theme as theme %}
+        {% if forloop.counter == 2 %}
+        <div class="blogDark">
+        {% include 'blog/components/blog_section.html' %}
+        </div>
+        {% else %}
+        {% include 'blog/components/blog_section.html' %}
+        {% endif %}
+        {% endwith %}
+        {% endfor %}
+    </div>
+</section>
+
+{% endblock %}

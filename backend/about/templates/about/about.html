@@ -1,0 +1,197 @@
+{% extends "base.html" %}
+
+{% load static wagtailuserbar %}
+{% load i18n %}
+{% load wagtailcore_tags %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/about/tasks.css' %}">
+<link rel="stylesheet" href="{% static 'css/about/medicine.css' %}">
+<link rel="stylesheet" href="{% static 'css/about/leaders.css' %}">
+<link rel="stylesheet" href="{% static 'css/about/snowboat.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="tasks__block">
+    <div class="tasks__container container">
+        <div class="tasks__content-container">
+            <div class="tasks__content">
+                <div class="tasks_content_text">
+                    <div class="tasks__title title">
+                        наша миссия
+                    </div>
+                    <div class="tasks__text text">
+                        Сделаем ваш менеджмент лекарств эффективнее
+                    </div>
+                </div>
+                <div class="tasks_content_under">
+                    <div class="tasks_under_text">
+                        <div class="tasks_text_block">
+                            <div class="tasks_text_title">
+                                6
+                            </div>
+                            <div class="tasks_text_text">
+                                Мед. Проекта
+                            </div>
+                        </div>
+                        <div class="tasks_text_block">
+                            <div class="tasks_text_title">
+                                2021
+                            </div>
+                            <div class="tasks_text_text">
+                                Начало
+                            </div>
+                        </div>
+                        <div class="tasks_text_block">
+                            <div class="tasks_text_title">
+                                $250 000
+                            </div>
+                            <div class="tasks_text_text">
+                                Инвестиций
+                            </div>
+                        </div>
+                        <div class="tasks_text_block">
+                            <div class="tasks_text_title">
+                                23
+                            </div>
+                            <div class="tasks_text_text">
+                                Человек в команде
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tasks_content_icon">
+                        <img src={% static 'img/about/mondino_technologies.svg' %} alt="mondino_tech" class="tasks__content-img" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src={% static 'img/about/team_general_img.png' %} alt="team_general" class="tasks__img" />
+    </div>
+</div>
+<div class="leaders_block">
+    <div class="leaders__container container">
+        <div class="leaders_content">
+            <div class="leaders_title">
+                Команда Osher
+            </div>
+            <div class="leaders_text">
+                Команда ООО “Ошер Технолоджес”
+            </div>
+        </div>
+        <div class="leaders_content_under">
+            <div class="leaders_title_leader">
+                Руководители
+            </div>
+        </div>
+        <div class="leaders_content_lower">
+            <div class="leaders_block_img">
+                <img src={% static 'img/about/team_img_1.png' %} alt="team_img_1" class="leaders_img" />
+                <div class="leaders_title_block">
+                    Бочкарев Николай
+                </div>
+                <div class="leaders_text_block">
+                    Founder, CVO
+                </div>
+            </div>
+            <div class="leaders_block_img">
+                <img src={% static 'img/about/team_img_2.png' %} alt="team_img_2" class="leaders_img" />
+                <div class="leaders_title_block">
+                    Белостоцкий Виктор
+                </div>
+                <div class="leaders_text_block">
+                    CEO, team lead
+                </div>
+            </div>
+            <div class="leaders_block_img">
+                <img src={% static 'img/about/team_img_3.png' %} alt="team_img_3" class="leaders_img" />
+                <div class="leaders_title_block">
+                    Виктор Павлов
+                </div>
+                <div class="leaders_text_block">
+                    CTO, Full stack developer
+                </div>
+            </div>
+            <div class="leaders_block_img">
+                <img src={% static 'img/about/team_img_4.png' %} alt="team_img_4" class="leaders_img" />
+                <div class="leaders_title_block">
+                    Слава Скосырский
+                </div>
+                <div class="leaders_text_block">
+                    Frontend developer
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="showboat_block">
+    <div class="showboat_container container">
+        <div class="showboat_block_img">
+            <img src={% static 'img/about/team_icon_1.svg' %} alt="team_icon_1" class="showboat_img" />
+            <div class="showboat_title">
+                Командный дух
+            </div>
+            <div class="showboat_text">
+                Мы “Dream team” благодаря чувству командного духа. Для нас важно развиваться и поддерживать друг друга плечом к плечу.
+            </div>
+        </div>
+        <div class="showboat_block_img">
+            <img src={% static 'img/about/team_icon_2.svg' %} alt="team_icon_2" class="showboat_img" />
+            <div class="showboat_title">
+                Гибкость
+            </div>
+            <div class="showboat_text">
+                Мыслить и работать намного эффективнее и приятнее, используя гибкий подход. А также уметь действовать здесь и сейчас.
+            </div>
+        </div>
+        <div class="showboat_block_img">
+            <img src={% static 'img/about/team_icon_3.svg' %} alt="team_icon_3" class="showboat_img" />
+            <div class="showboat_title">
+                Позитивный настрой
+            </div>
+            <div class="showboat_text">
+                Мы уверенно смотрим вперед и ценим вклад каждого. Даже в самые тяжелые моменты все убеждены, что справятся.
+            </div>
+        </div>
+        <div class="showboat_block_img">
+            <img src={% static 'img/about/team_icon_4.svg' %} alt="team_icon_4" class="showboat_img" />
+            <div class="showboat_title">
+                Проактивность
+            </div>
+            <div class="showboat_text">
+             Мы команда, которая проявляет инициативу и принимает вывоз. Мы ценим легкость на подъем и ищем лучшие способы решения задач.   
+            </div>
+        </div>
+        <div class="showboat_block_img">
+            <img src={% static 'img/about/team_icon_5.svg' %} alt="team_icon_5" class="showboat_img" />
+            <div class="showboat_title">
+                Вовлеченность
+            </div>
+            <div class="showboat_text">
+                Наши глаза горят во время процесса работы. Нам нравится то, что мы делаем. Благодаря данной ценности мы способны добиваться высоких результатов.
+            </div>
+        </div>
+        <div class="showboat_block_img">
+            <img src={% static 'img/about/team_icon_6.svg' %} alt="team_icon_6" class="showboat_img" />
+            <div class="showboat_title">
+                Уважение и доверие 
+            </div>
+            <div class="showboat_text">
+                Мы ценим доверие, как воздух. Поскольку мы дышим легко и привольно в такой командной культуре. Каждый в команде может рассчитывать на коллег. 
+            </div>
+        </div>
+    </div>
+</div>
+<div class="medicine_block">
+    <div class="medicine_container container">
+        <div class="medicine_content">
+            <div class="medicine_title">
+                Медицинская ИТ-компания
+            </div>
+            <div class="medicine_text">
+                Наша команда тесно сотрудничает с врачами и фармакологами для того, чтобы делать наш сервис лучше и эффективнее для пользователей. Мы работаем в “Национальном центре медицины” РБ-№1 Республики Саха (Якутия) в г. Якутске, который находится по адресу Сергеляхское шоссе, 4.
+            </div>
+        </div>
+        <img src={% static 'img/about/team_medicine_img.svg' %} alt="team_medicine" class="medicine__img" />
+    </div>
+</div>
+{% endblock %}

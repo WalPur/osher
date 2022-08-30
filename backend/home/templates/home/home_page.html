@@ -1,0 +1,232 @@
+{% extends "base.html" %}
+{% load static wagtailuserbar %}
+{% load i18n %}
+{% load wagtailcore_tags %}
+
+{% block body_class %} template-homepage {% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/home/main.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="generalBlock">
+  <div class="generalBlock-container">
+    <div class="row justify-content-left">
+      <div data-aos="fade-up">
+
+        <!-- Heading -->
+        <h1 class="display-3 mb-4 homeHeader">
+          OSHER TECHNOLOGIES
+        </h1>
+
+        <!-- Text -->
+        <p class="homeSubheader">
+          {% trans "Создаем мобильные приложения, которыми пользуются миллионы." %}
+        </p>
+
+        <!-- Subtext -->
+        <p class="homeSubtext">
+          {% trans "Помогаем фудтеху, ритейлу, банкам становится лидерами отраслей." %}
+        </p>
+      </div>
+    </div>
+    <div class="generalBackground_img">
+      <img src="{% static 'img/home/generalBlock_img.png' %}">
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS LINKS -->
+<section class="projects_links-block">
+  <div class="pageWrapper projects">
+    <div class="projectsRow">
+      <a class="linkToProject" id="mondinoButton" href="#appLinks">
+        <img src="{% static 'img/home/buttonsImages/tracker.png' %}" alt="">
+        <div class="buttonBlur"></div>
+        <span>
+          MOBIVET
+        </span>
+      </a>
+      <a class="linkToProject" id="vivatButton" href="#vivat">
+        <img src="{% static 'img/home/buttonsImages/vivat.png' %}" alt="">
+        <div class="buttonBlur"></div>
+        <span>
+          {% trans "VIVAT АПТЕКА" %}
+        </span>
+      </a>
+      <a class="linkToProject" id="screeningButton" href="#screening">
+        <img src="{% static 'img/home/buttonsImages/screening.png' %}" alt="">
+        <div class="buttonBlur"></div>
+        <span>
+          {% trans "СКРИНИНГ ГЛАУКОМЫ" %}
+        </span>
+      </a>
+      <a class="linkToProject" id="femaleButton" href="#female">
+        <img src="{% static 'img/home/buttonsImages/female.png' %}" alt="">
+        <div class="buttonBlur"></div>
+        <span>
+          {% trans "ЖЕНСКОЕ ЗДОРОВЬЕ" %}
+        </span>
+      </a>
+      <a class="linkToProject" id="noaloneButton" href="#notalone">
+        <img src="{% static 'img/home/buttonsImages/notalone.png' %}" alt="">
+        <div class="buttonBlur"></div>
+        <span>
+          {% trans "ТЫ НЕ ОДИН" %}
+        </span>
+      </a>
+      <a class="linkToProject" id="oncoButton" href="#onco">
+        <img src="{% static 'img/home/buttonsImages/onco.png' %}" alt="">
+        <div class="buttonBlur"></div>
+        <span>
+          {% trans "ОНКОПОИСКСАХА" %}
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- APP LINKS -->
+<section class="appLinks" id="appLinks">
+  <div class="pageWrapper appRow">
+    <div class="linksContent">
+      <h2 class="display-3 mb-4 linksHeader">
+        MOBIVET
+      </h2>
+      <div class="headerBorder-light"></div>
+      <p class="linksSubheader">
+        {% trans "Карманный помощник для людей с питомцами. Полезные советы, информации для хозяев." %}
+      </p>
+      <div class="linksButtons">
+        <button class="linkButton" id="linksLearn">
+          {% trans "Перейти на сайт" %}
+        </button>
+        <button class="linkButton" id="linksPrivacy">
+          {% trans "Политика конфиденциальности" %}
+        </button>
+      </div>
+    </div>
+    <div class="linksContent doctorContent linksImages">
+      <img src="{% static 'img/home/mobivetIcon.svg' %}" alt="">
+      <img src="{% static 'img/home/mobivetScreenshot.png' %}" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- ONCO -->
+<section class="onco" id="onco">
+  <div class="pageWrapper oncoContent">
+    <img src="{% static 'img/home/onco.png' %}" alt="">
+    <div class="blockContent">
+      <h2 class="display-3 mb-4 linksHeader-2">
+        {% trans "СКРИНИНГ И РАННЯЯ ДИАГНОСТИКА РАКА В ЯКУТИИ" %}
+      </h2>
+      <div class="headerBorder-dark"></div>
+      <p class="linksSubheader-2">
+        {% trans "Скрининговый проект «ОНКОПОИСК» ориентирован на выявление предраковых состояний и раннего рака. Цель проекта – выявить заболевание как можно раньше, поставить без промедления диагноз." %}
+      </p>
+      <div class="linksButtons">
+        <a href="https://xn--80aawhbpgcajyb7c.xn--p1ai/">
+          <button class="linkButton" id="linksLearn">
+            {% trans "Перейти на сайт" %}
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIVAT -->
+<section class="vivat" id="vivat">
+  <div class="pageWrapper vivatContent">
+    <div class="blockContent">
+      <h2 class="display-3 mb-4 linksHeader">
+        {% trans "VIVAT АПТЕКА" %}
+      </h2>
+      <div class="headerBorder-light"></div>
+      <p class="linksSubheader">
+        {% trans "Интернет - аптека Виват предоставляет возможность не выходя из дома узнать о скидках аптеки, заказать экспресс- доставку товаров аптеки до двери, благодаря интеграции с сервисом доставки." %}
+      </p>
+      <div class="linksButtons">
+        <a href="http://xn----7sbbagaytx2c4ad.xn--p1ai/">
+          <button class="linkButton" id="linksLearn">
+            {% trans "Перейти на сайт" %}
+          </button>
+        </a>
+      </div>
+    </div>
+    <img src="{% static 'img/home/vivat.png' %}" alt="">
+  </div>
+</section>
+
+<!-- GLAUCOMA -->
+<section class="screening" id="screening">
+  <div class="pageWrapper screeningRow">
+    <img src="{% static 'img/home/screening.png' %}" alt="" class="screeningImg">
+    <div class="blockContent">
+      <h2 class="display-3 mb-4 linksHeader-2">
+        {% trans "Скрининговый сервис по выявлению глаукомы" %}
+      </h2>
+      <div class="headerBorder-dark"></div>
+      <p class="linksSubheader-2">
+        {% trans "Разработка и внедрение медицинских сервисов выполняющие функции диагностики, дистанционного мониторинга и информацией об пациентов имеющих заболевание глаукомой (регистр), находящихся в определенном клиническом состоянии и получающих(получивших) конкретное лечение, которые взяты на учет в системе здравоохранения." %}
+      </p>
+      <div class="linksButtons screeningLink">
+        <a href="https://xn--80aaaal7bfkr6ar4a.xn--p1ai/">
+          <button class="linkButton" id="linksLearn">
+            {% trans "Перейти на сайт" %}
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- YOU ARE NOT ALONE -->
+<section class="notalone" id="notalone">
+  <div class="pageWrapper notaloneRow">
+    <div class="notaloneContent blockContent">
+      <h2 class="display-3 mb-4 linksHeader">
+        {% trans "ТЫ НЕ ОДИН" %}
+      </h2>
+      <div class="headerBorder-light notaloneBorder-light"></div>
+      <p class="linksSubheader">
+        {% trans "В рамках реализации национального проекта «Здравоохранение» разработали пилотный проект «Ты не один», основным направлением которого является онкопсихологическая помощь для больных и их близких." %}
+      </p>
+      <div class="linksButtons">
+        <a href="http://xn--80aakdq1adf4ad5b1d.xn--p1ai/">
+          <button class="linkButton" id="linksLearn">
+            {% trans "Перейти на сайт" %}
+          </button>
+        </a>
+      </div>
+    </div>
+    <img src="{% static 'img/home/notalone.png' %}" alt="" class="notaloneImg">
+  </div>
+</section>
+
+<!-- FEMALE HEALTH -->
+<section class="female" id="female">
+  <div class="pageWrapper femaleContent">
+    <img src="{% static 'img/home/female.png' %}" alt="">
+    <div class="blockContent">
+      <h2 class="display-3 mb-4 linksHeader-2">
+        {% trans "ЖЕНСКОЕ ЗДОРОВЬЕ" %}
+      </h2>
+      <div class="headerBorder-dark"></div>
+      <p class="linksSubheader-2">
+        {% trans "Проект «Женское здоровье» разработан для сохранения и укрепления здоровья женского населения Республики Саха (Якутия). Цель проекта - сохранение репродуктивного здоровья женщин и ранняя диагностика заболеваний женских органов." %}
+      </p>
+      <div class="linksButtons">
+        <a href="https://xn-----8kcahlfadeo7a1bpea7akm5f8g.xn--p1ai/">
+          <button class="linkButton" id="linksLearn">{% trans "Перейти на сайт" %}</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+{% block extra_js %}
+<script type="text/javascript" src="{% static 'js/smooth.js' %}"></script>
+{% endblock %}

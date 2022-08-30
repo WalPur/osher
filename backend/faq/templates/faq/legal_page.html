@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% load static wagtailuserbar %}
+{% load i18n %}
+{% load wagtailcore_tags %}
+
+{% block content %}
+
+{#HTML body here#}
+<div class="container mt-8 pb-8">
+    <p style="font-family: sans-serif;" class="h1 font-weight-bold">
+        {% trans "Правовая информация" %}
+    </p>
+    <div class="d-flex flex-column">
+        <li style="color: #0d6efd" class="mt-5">
+            <a href="/policy" class="link-primary h2" style="font-family: sans-serif;">
+                {% trans "Политика конфиденциальности" %}
+            </a>
+        </li>
+        {% comment %} <li style="color: #0d6efd" class="mt-5">
+            <a href="#" class="link-primary h2" style="font-family: sans-serif;">
+                Лицензия на
+                право осуществления медицинской
+                деятельности
+            </a>
+        </li>
+        <li style="color: #0d6efd" class="mt-5">
+            <a href="#" class="link-primary h2" style="font-family: sans-serif;">
+                Согласие на обработку персональных данных
+            </a>
+        </li>
+        <li style="color: #0d6efd" class="mt-5">
+            <a href="#" class="link-primary h2" style="font-family: sans-serif;">
+                Политика обработки персональных данных
+            </a>
+        </li> {% endcomment %}
+        <li style="color: #0d6efd" class="mt-5">
+            <a href="https://docs.google.com/document/d/1VWWkeTEAZZWpjgfpzmJEYcH6kspoSRAdffYrH8yYy8g" class="link-primary h2" style="font-family: sans-serif;">
+                {% trans "Пользовательское соглашение" %}
+            </a>
+        </li>
+        {% comment %} <li style="color: #0d6efd" class="mt-5">
+            <a href="#" class="link-primary h2" style="font-family: sans-serif;">
+                Договор публичной оферты
+            </a>
+        </li>
+        <li style="color: #0d6efd" class="mt-5">
+            <a href="#" class="link-primary h2" style="font-family: sans-serif;">
+                Свидетельство о постановке российской организации в налоговом органе по месту ее нахождения
+            </a>
+        </li> {% endcomment %}
+    </div>
+</div>
+{% endblock %}

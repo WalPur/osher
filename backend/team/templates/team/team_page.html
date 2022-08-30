@@ -1,0 +1,333 @@
+{% extends "base.html" %}
+{% load static wagtailuserbar %}
+{% load wagtailcore_tags wagtailimages_tags %}
+{% load team_tags %}
+{% load i18n %}
+
+{% block body_class %} template-homepage {% endblock %}
+
+{% block extra_css %}<link rel="stylesheet" href="{% static 'css/team/team.css' %}">{% endblock %}
+
+{% block content %}
+
+<section class="team__general">
+    <div class="team__general-container">
+        <div class="team__general-content">
+            <div class="team__general-title">
+               {% trans "О компании" %} 
+            </div>
+            <div class="team__general-text">
+                {% trans "Целью мондино технолоджес - дать возможность и привить пользователям привычку самостоятельно заботиться о своем здоровье с помощью наших Сервисов." %}
+            </div>
+            <div class="team__general-cards">
+                <div class="team__general-card">
+                    <div class="team__card-title">
+                        6
+                    </div>
+                    <div class="team__card-text">
+                        {% trans "МЕД ПРОЕКТА" %}
+                    </div>
+                </div>
+                <div class="team__general-card">
+                    <div class="team__card-title">
+                        2020
+                    </div>
+                    <div class="team__card-text">
+                        {% trans "НАЧАЛО" %}
+                    </div>
+                </div>
+                <div class="team__general-card">
+                    <div class="team__card-title">
+                        60 000 $
+                    </div>
+                    <div class="team__card-text">
+                        {% trans "ИНВЕСТИЦИЙ" %}
+                    </div>
+                </div>
+                <div class="team__general-card">
+                    <div class="team__card-title">
+                        12
+                    </div>
+                    <div class="team__card-text">
+                        {% trans "ЧЕЛОВЕК В КОМАНДЕ" %}
+                    </div>
+                </div>
+            </div>
+            {% comment %} <a href="" class="team__general-button localization" caption="generalFeedback">Связаться с нами</a> {% endcomment %}
+        </div>
+        <div class="team__general-img">
+            <img src="{% static 'img/team/company_img_1.png' %}">
+        </div>
+        <div class="team__general-img">
+            <img src="{% static 'img/team/company_img_1_2.png' %}">
+        </div>
+    </div>
+</section>
+<!-- Main -->
+<section class="main-general"> 
+    <div class="pageWrapper main-general-container">
+        <div class="main-title">
+            <p class="main-text1">{% trans "Наши принципы" %}</p>
+            <p class="main-text2">{% trans "Мы строим международную медицинскую ИТ-компанию, которая изменит мир" %}</p>
+        </div>
+        <div class="main-general-content">
+            <div class="main-content-container">
+                <div class="main-cards">
+                    <div class="main-card">
+                        <img src="{% static 'img/team/company_icon.svg' %}">
+                        <div class="main-block-text-pos1">
+                            <p class="main-block-text1">{% trans "Командный дух" %}</p>
+                            <p class="main-block-text2">
+                                {% trans "Мы “Dream team” благодаря чувству командного духа. Это территория эмпатии, юмора и добродушия. Для нас важно развиваться и поддерживать друг друга плечом к плечу." %}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main-card">
+                        <img src="{% static 'img/team/company_icon.svg' %}">
+                        <div class="main-block-text-pos1">
+                            <p class="main-block-text1">{% trans "Гибкость" %}</p>
+                            <p class="main-block-text2">
+                                {% trans "Мыслить и работать намного эффективнее и приятнее, используя гибкий подход. А также уметь действовать здесь и сейчас." %}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main-card">
+                        <img src="{% static 'img/team/company_icon.svg' %}">
+                        <div class="main-block-text-pos1">
+                            <p class="main-block-text1">{% trans "Позитивный настрой" %}</p>
+                            <p class="main-block-text2">
+                                {% trans "Мы уверенно смотрим вперед и ценим вклад каждого. Даже в самые тяжелые моменты все убеждены, что справятся." %}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main-card">
+                        <img src="{% static 'img/team/company_icon.svg' %}">
+                        <div class="main-block-text-pos1">
+                            <p class="main-block-text1">{% trans "Проактивность" %}</p>
+                            <p class="main-block-text2">
+                                {% trans "Мы команда, которая проявляет инициативу и принимает вывоз. Мы ценим легкость на подъем и ищем лучшие способы решения задач." %}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main-card">
+                        <img src="{% static 'img/team/company_icon.svg' %}">
+                        <div class="main-block-text-pos1">
+                            <p class="main-block-text1">{% trans "Вовлеченность" %}</p>
+                            <p class="main-block-text2">
+                                {% trans "Наши глаза горят во время процесса работы. Нам нравится то, что мы делаем. Благодаря данной ценности мы способны добиваться высоких результатов." %}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main-card">
+                        <img src="{% static 'img/team/company_icon.svg' %}">
+                        <div class="main-block-text-pos1">
+                            <p class="main-block-text1">{% trans "Уважение и доверие" %}</p>
+                            <p class="main-block-text2">
+                                {% trans "Для нас супер важно, чтобы царила атмосфера взаимного уважения. Мы ценим доверие, как воздух. Поскольку мы дышим легко и привольно в такой командной культуре. Каждый в команде может рассчитывать на коллег." %}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% comment %} 
+<!-- Medicine -->
+<section class="team__medicine">
+    <div class="pageWrapper medicine__container">
+        <div class="team__medicine-content">
+            <div class="team__medicine-title localization" caption="medicineTitle">
+                Медицинская ИТ-компания
+            </div>
+            <div class="team__medicine-text localization" caption="medicineSubtitle">
+                Наша команда тесно сотрудничает с врачами и фармакологами для того, чтобы делать наш сервис лучше и эффективнее для пользователей. Мы работаем в “Национальном центре медицины” РБ-№1 Республики Саха (Якутия) в г. Якутске, который находится по адресу Сергеляхское шоссе, 4.
+            </div>
+        </div>
+    </div>
+</section>
+{% endcomment %}
+<!-- Command -->
+<section class="team__command">
+    <div class="pageWrapper command__container">
+        <div class="team__command-content">
+            <div class="team__command-row1">
+                <div class="command__card">
+                    <div class="command__card-img">
+                        <img src="{% static 'img/team/command_1.jpg' %}">
+                    </div>
+                    <div class="command__card-title">
+                        {% trans "Титов Михаил" %}
+                    </div>
+                    <div class="command__card-text">
+                        Founder, CVO
+                    </div>
+                </div>
+                <div class="command__card">
+                    <div class="command__card-img">
+                        <img src="{% static 'img/team/command_2.jpg' %}">
+                    </div>
+                    <div class="command__card-title">
+                        {% trans "Виктор Белостоцкий" %}
+                    </div>
+                    <div class="command__card-text">
+                        CEO, team lead
+                    </div>
+                </div>
+                <div class="command__card">
+                    <div class="command__card-img">
+                        <img src="{% static 'img/team/command_3.jpg' %}">
+                    </div>
+                    <div class="command__card-title">
+                        {% trans "Виктор Павлов" %}
+                    </div>
+                    <div class="command__card-text">
+                        CTO, Full stack developer
+                    </div>
+                </div>
+                <div class="command__card">
+                    <div class="command__card-img">
+                        <img src="{% static 'img/team/command_4.jpg' %}">
+                    </div>
+                    <div class="command__card-title">
+                        {% trans "Слава Скосырский" %}
+                    </div>
+                    <div class="command__card-text">
+                        Frontend developer
+                    </div>
+                </div>
+                <div class="command__card">
+                    <div class="command__card-img">
+                        <img src="{% static 'img/team/command_5.jpg' %}">
+                    </div>
+                    <div class="command__card-title">
+                        {% trans "Вячеслав Голоков" %}
+                    </div>
+                    <div class="command__card-text">
+                        Frontend developer
+                    </div>
+                </div>
+                <div class="command__card">
+                    <div class="command__card-img">
+                        <img src="{% static 'img/team/command_6.jpg' %}">
+                    </div>
+                    <div class="command__card-title">
+                        {% trans "Эрнест Эверстов" %}
+                    </div>
+                    <div class="command__card-text">
+                        Frontend developer
+                    </div>
+                </div>
+                <div class="command__card">
+                    <div class="command__card-img">
+                        <img src="{% static 'img/team/command_7.jpg' %}">
+                    </div>
+                    <div class="command__card-title">
+                        {% trans "Дьулустаан Семенов" %}
+                    </div>
+                    <div class="command__card-text">
+                        Project manager
+                    </div>
+                </div>
+                <div class="command__card">
+                    <div class="command__card-img">
+                        <img src="{% static 'img/team/command_8.jpg' %}">
+                    </div>
+                    <div class="command__card-title">
+                        {% trans "Андрей Аммосов" %}
+                    </div>
+                    <div class="command__card-text">
+                        Frontend developer
+                    </div>
+                </div>
+                <div class="command__card">
+                    <div class="command__card-img">
+                        <img src="{% static 'img/team/command_9.jpg' %}">
+                    </div>
+                    <div class="command__card-title">
+                        {% trans "Николай Бочкарев" %}
+                    </div>
+                    <div class="command__card-text">
+                        Frontend developer
+                    </div>
+                </div>
+                <div class="command__card">
+                    <div class="command__card-img">
+                        <img src="{% static 'img/team/command_10.jpg' %}">
+                    </div>
+                    <div class="command__card-title">
+                        {% trans "Иван Колесов" %}
+                    </div>
+                    <div class="command__card-text">
+                        UI/UX designer
+                    </div>
+                </div>
+                <div class="command__card">
+                    <div class="command__card-img">
+                        <img src="{% static 'img/team/command_11.jpg' %}">
+                    </div>
+                    <div class="command__card-title">
+                        {% trans "Николай Спиридонов" %}
+                    </div>
+                    <div class="command__card-text">
+                        Backend developer
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About -->
+<section class="team__about">
+    <div class="pageWrapper about__container">
+        <div class="main-title">
+            <p class="about-1">{% trans "СМИ о нас" %}</p>
+            <p class="about-2">
+                {% trans "Читайте о развитии компании и наших проектах в новостях. Будь в курсе происходящего." %}
+            </p>
+        </div>
+        <div class="about-content">
+            <div class="about-cards">
+                <div class="about-card">
+                    <div class="about-block">
+                        <img src="{% static 'img/team/Rectangle176.svg' %}">
+                        <div class="about__text-group">
+                            <p class="about-text-1">{% trans "Персонализированная медицина" %}</p>
+                            <p class="about-text-2">
+                                {% trans "Сервис позволит контролировать здоровье благодаря технологиям ИИ и большим данным." %}
+                            </p>
+                            <a href="" class="about-button">{% trans "Перейти" %}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <div class="about-block">
+                        <img src="{% static 'img/team/Rectangle175.svg' %}">
+                        <div class="about__text-group">
+                            <p class="about-text-1">{% trans "“Карманный доктор”" %}</p>
+                            <p class="about-text-2">
+                                {% trans "В Якутии разрабатывают новый сервис, которого еще нет в других регионах России." %}
+                            </p>
+                            <a href="" class="about-button">{% trans "Перейти" %}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <div class="about-block">
+                        <img src="{% static 'img/team/Rectangle174.svg' %}">
+                        <div class="about__text-group">
+                            <p class="about-text-1">{% trans "Pocket medic Виктора Белостоцкого" %}</p>
+                            <p class="about-text-2">{% trans "«Карманный доктор» поможет выявлять последствия взаимодействия лекарств." %}</p>
+                            <a href="" class="about-button">{% trans "Перейти" %}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% endblock %}

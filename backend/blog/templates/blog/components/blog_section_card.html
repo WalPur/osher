@@ -1,0 +1,45 @@
+{% load wagtailimages_tags %}
+{% load i18n %}
+{% load i18n wagtailimages_tags %}
+{% image post.post_image original as image %}
+{% get_current_language as LANGUAGE_CODE %}
+
+<div class="col-md-4 custom-card">
+    <!-- Card -->
+    <div class="card card-sm rounded-top-left rounded-bottom-right lift lift-lg mt-6" style="overflow: hidden">
+
+        <!-- Image -->
+            {% image post.post_image max-350x250 class="blogCardImg" %}
+        <!-- Shape -->
+        <div class="position-relative">
+            <div class="shape shape-fluid-x shape-top text-white">
+                <div class="shape-img pb-5">
+                    <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+                        <path d="M0 25h25L75 0h25v50H0z" fill="currentColor"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Body -->
+        <div class="card-body">
+
+            <!-- Heading -->
+            <h2 class="mb-2 card-title">
+                {{ post.title }}
+            </h2>
+
+            <!-- Text -->
+            <p class="font-size-sm card-text">
+                {{ post.description }}
+            </p>
+
+            <!-- Footer -->
+            <div class="d-flex align-items-center card-author-text">
+              <a href="/{{ LANGUAGE_CODE }}/blog/{{ post.slug }}" class="card-link">{% trans "Подробнее" %}</a>
+            </div>
+
+        </div>
+    </div>
+
+</div>

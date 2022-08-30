@@ -1,0 +1,23 @@
+.idea
+database-data
+*.pem
+# db.sqlite3
+*.pyc
+src/static_root/
+./venv
+.venv
+./venv/
+venv/
+*.pid
+src/media
+./.vscode
+.vscode
+./.vscode/
+debug.log
+# db.sqlite3
+
+src/media_root
+
+.webassets-cache/*
+/static/.webassets-cache/*
+/applications/django-web/src.sock

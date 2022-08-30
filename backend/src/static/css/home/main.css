@@ -1,0 +1,669 @@
+.generalBlock {
+    background: url("generalBackground.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.generalBlock-container{
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homeHeader {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 12px #0D99FF;
+}
+
+.homeSubheader {
+    font-size: 30px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 12px #0D99FF;
+}
+
+.homeSubtext {
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 12px #0D99FF;
+}
+
+.blockContent {
+    max-width: 650px;
+    min-width: 120px;
+}
+
+.projects_links-block{
+    margin: 12px 0;
+}
+
+.projectsRow {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.linkToProject {
+    margin: 12px 0;
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background: #13204F;
+    opacity: 0.8;
+}
+.linkToProject span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-shadow: 1px 2px 8px #000000;
+    color: #FFFFFF;
+    z-index: 3;
+    position: absolute;
+}
+.buttonBlur {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: #13204F;
+    opacity: 0.8;
+    backdrop-filter: blur(12px);
+}
+.linkToProject img {
+    position: absolute;
+    z-index: 1;
+}
+
+.appLinks {
+    position: relative;
+    background: url("appLinkBackground.png") center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 31px;
+    padding: 80px 0;
+    padding-bottom: 0;
+}
+
+.appLinks::after{
+    position: absolute;
+    bottom: -31px;
+    left: 0;
+    transform: translate(-50%, 0);
+    content: '';
+    display: block;
+    width: 32%;
+    background-size: cover!important;
+    height: 32px;
+    background: url("../../img/team/company_bg_2_1.svg");
+    transform: rotate(180deg);
+}
+
+.appRow{
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.linksContent {
+    max-width: 580px;
+    width: 50%;
+}
+
+.LinksIcon {
+    width: 100px;
+    height: 100px;
+}
+
+.linksHeader {
+    font-size: 48px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+    text-shadow: 0px 0px 12px #0D99FF;
+}
+
+.headerBorder-light {
+    width: 75%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    margin-bottom: 24px;
+}
+
+.headerBorder-dark {
+    width: 75%;
+    height: 2px;
+    background-color: #13204F;
+
+    margin-bottom: 24px;
+}
+
+.linksSubheader {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+}
+
+.linksButtons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.screeningLink, .female .linksButtons,
+.onco .linksButtons{
+    justify-content: end;
+}
+
+.linksButtons button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+
+    padding: 8px 24px;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px 0px;
+    border: none;
+
+    color: #FFFFFF;
+}
+
+#linksLearn {
+    background: #0D99FF;
+    /* margin-right: 24px; */
+}
+#linksPrivacy {
+    background: #6658EA;
+}
+
+.linksDownload p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    margin-bottom: 24px;
+
+    color: #FFFFFF;
+}
+
+.linksImages {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-top: 15px;
+}
+.linksImages img {
+    width: 100%;
+    height: auto;
+}
+#mondinoIcon {
+    margin-bottom: 60px;
+}
+.doctorContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.doctorHeader, .doctorSubheader, .doctorLinkDownload {
+    text-align: right;
+}
+
+.onco {
+    background: url("vivat_bg.png") bottom left;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.oncoContent {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.oncoContent img{
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+}
+
+.oncoContent .blockContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.linksHeader-2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 150%;
+    text-align: right;
+    letter-spacing: 0.03em;
+    color: #13204F;
+}
+
+.linksSubheader-2 {
+    text-align: right;
+}
+
+.vivat {
+    display: flex;
+    align-items: center;
+    background: #13204F;
+    padding: 80px 0;
+    margin: 32px 0;
+    position: relative;
+    width: 100%;
+}
+
+.vivat::before{
+    position: absolute;
+    top: -31px;
+    right: 0;
+    z-index: -1;
+    content: '';
+    display: block;
+    width: 32%;
+    height: 32px;
+    background-size: cover!important;
+    background: url("../../img/team/company_bg_2_1.svg");
+}
+
+.vivat::after{
+    position: absolute;
+    bottom: -31px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    content: '';
+    display: block;
+    width: 36%;
+    height: 32px;
+    background-size: 100% 100%!important;
+    background: url("../../img/home/Rectangle 41.png");
+}
+
+.vivatContent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.screening {
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screeningRow {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.screeningRow .blockContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.femaleHeader, .femaleSubheader {
+    text-align: right;
+}
+
+.notalone {
+    display: flex;
+    align-items: center;
+    background: #13204F;
+    padding: 80px 0;
+    margin: 32px 0;
+    position: relative;
+}
+
+.notalone::before{
+    position: absolute;
+    top: -31px;
+    right: 0;
+    z-index: -1;
+    content: '';
+    display: block;
+    width: 43%;
+    height: 32px;
+    background-size: cover!important;
+    background: url("../../img/team/company_bg_2_1.svg");
+}
+
+.notalone::after{
+    position: absolute;
+    bottom: -31px;
+    left: 0;
+    transform: translate(-50%, 0);
+    content: '';
+    display: block;
+    width: 32%;
+    background-size: cover!important;
+    height: 32px;
+    background: url("../../img/team/company_bg_2_1.svg");
+    transform: rotate(180deg);
+}
+
+.notaloneRow {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.female {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.femaleContent {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.femaleContent .blockContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.pageWrapper img{
+    object-fit: contain;
+    /* width: 100%;
+    height: auto; */
+}
+
+@media (max-width: 1024px){
+    .generalBlock-container{
+        margin-left: 50px;
+    }
+    .generalBackground_img img{
+        max-height: 300px;
+    }
+    .homeHeader{
+        font-size: 40px;
+    }
+    .homeSubheader{
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+    .homeSubtext{
+        font-size: 15px;
+        margin-bottom: 1rem;
+    }
+    .linkToProject{
+        width: 250px;
+        height: 63px;
+    }
+    .linkToProject img{
+        width: 250px;
+        height: 63px;
+    }
+    .appLinks {
+        padding: 50px 0;
+        padding-bottom: 0;
+    }
+    .appRow{
+        margin: 0 50px;
+    }
+    .linksHeader,
+    .linksHeader-2{
+        font-size: 32px;
+    }
+    .linksSubheader,
+    .linksSubheader-2{
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+    .linksButtons{
+        margin-bottom: 8px;
+    }
+    .linksButtons button{
+        padding: 6px 16px;
+        font-size: 12px;
+        /* margin-right: 18px; */
+        margin-bottom: 6px;
+    }
+    /* #linksLearn {
+        margin-right: 18px;
+    } */
+    .linksDownload p{
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+    #mondinoIcon{
+        max-width: 150px;
+    }
+    #linksHand{
+        max-width: 320px;
+    }
+    .linksStore img{
+        max-width: 76px;
+    }
+    .linksContent,
+    .blockContent{
+        max-width: 410px;
+    }
+    .vivat{
+        padding: 50px 0;
+    }
+    .vivatContent{
+        margin: 0 50px;
+    }
+    .vivatContent img{
+        max-width: 400px;
+    }
+    .screening{
+        padding: 50px 0;
+    }
+    .screeningRow{
+        margin: 0 50px;
+    }
+    .screeningRow img{
+        max-width: 400px;
+    }
+    .female{
+        padding: 50px 0;
+    }
+    .femaleContent{
+        margin: 0 50px;
+    }
+    .femaleContent img{
+        max-width: 300px;
+    }
+    .notalone{
+        padding: 50px 0;
+    }
+    .notaloneRow{
+        margin: 0 50px;
+    }
+    .notaloneRow img{
+        max-width: 400px;
+    }
+    .onco{
+        padding: 50px 0;
+        background: none;
+    }
+    .oncoContent{
+        margin: 0 50px;
+    }
+    .oncoContent img{
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 576px){
+    .generalBlock-container{
+        margin-left: 18px;
+    }
+    .generalBackground_img img{
+        max-width: 161px;
+    }
+    .homeHeader{
+        font-size: 15px;
+        margin-bottom: 0.5rem!important;
+    }
+    .homeSubheader{
+        font-size: 10px;
+        margin-bottom: 0.5rem;
+    }
+    .homeSubtext{
+        font-size: 10px;
+        margin-bottom: 0.5rem;
+    }
+    .projects{
+        margin: 0 18px;
+    }
+    .linksContent {
+        padding: 18px 0;
+        padding-bottom: 0;
+    } 
+    .linkToProject{
+        width: 150px;
+        height: 37px;
+    }
+    .linkToProject img{
+        width: 150px;
+        height: 37px;
+    }
+    .linkToProject span{
+        font-size: 7.47px;
+    }
+    .appLinks {
+        padding: 18px 0;
+        padding-bottom: 0;
+    }
+    .appRow{
+        margin: 0 18px;
+    }
+    .linksHeader,
+    .linksHeader-2{
+        font-size: 14px;
+    }
+    .linksSubheader,
+    .linksSubheader-2{
+        font-size: 10px;
+        margin-bottom: 12px;
+    }
+    .linksButtons{
+        margin-bottom: 8px;
+    }
+    .linksButtons button{
+        padding: 6px 16px;
+        font-size: 7.82994px;
+        /* margin-right: 18px; */
+        margin-bottom: 6px;
+    }
+    .linksDownload p{
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+    #mondinoIcon{
+        max-width: 150px;
+    }
+    #linksHand{
+        max-width: 320px;
+    }
+    .linksStore img{
+        max-width: 76px;
+    }
+    .linksContent,
+    .blockContent{
+        max-width: 410px;
+    }
+    .vivat{
+        padding: 50px 0;
+    }
+    .vivatContent{
+        margin: 0 18px;
+    }
+    .vivatContent img{
+        max-width: 300px;
+    }
+    .screening{
+        padding: 50px 0;
+    }
+    .screeningRow{
+        margin: 0 18px;
+    }
+    .screeningRow img{
+        max-width: 300px;
+    }
+    .female{
+        padding: 50px 0;
+    }
+    .femaleContent{
+        margin: 0 18px;
+    }
+    .femaleContent img{
+        max-width: 300px;
+    }
+    .notalone{
+        padding: 50px 0;
+    }
+    .notaloneRow{
+        margin: 0 18px;
+    }
+    .notaloneRow img{
+        max-width: 300px;
+    }
+    .onco{
+        padding: 50px 0;
+    }
+    .oncoContent{
+        margin: 0 18px;
+    }
+    .oncoContent img{
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 460px) {
+    .pageWrapper img {
+        max-width: 150px;
+    }
+}

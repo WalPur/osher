@@ -1,0 +1,87 @@
+<!-- GUIDEBOOK -->
+{% load static wagtailuserbar %}
+{% load i18n %}
+{% load wagtailcore_tags wagtailimages_tags %}
+{% load blog_tags %}
+<section class="pt-9 pt-md-11 blog__actual">
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-12">
+
+                <!-- Heading -->
+                <h1 class="blog__actual-title">
+                    {% trans "Актуальное. Последние событие" %}
+                </h1>
+
+                <!-- Text -->
+                <p class="blog__actual-subtitle">
+                    {% trans "Главное событие прошедшего 2020 года" %}
+                </p>
+
+                {% get_all_posts as posts %}
+
+                <!-- Card -->
+                <div class="card card-lg rounded-top-left rounded-bottom-right lift lift-lg actual__card">
+                    <div class="actual__card-flex">
+                        <div class="actual__card-img">
+                            <img class="img-fluid" src="{% static 'img/blog/blog_actual_img.svg' %}" alt="...">
+                        </div>
+                        <div class="col-md-6 actual-card">
+
+                            <!-- Body -->
+                            <div class="card-body">
+
+                                <!-- Preheading -->
+                                <h6 class="font-family-sans-serif text-primary mb-2 actual-card-subtitle">
+                                    {% trans "Первые инвестиции" %}
+                                </h6>
+
+                                <!-- Heading -->
+                                <h2 class="display-4 mb-4 actual-card-title">
+                                    {% trans "“Доверяем решительным”-B8." %}
+                                </h2>
+
+                                <!-- Text -->
+                                <p class="mb-4 card-body-text actual-card-text">
+                                    {% trans "Мы выпускники 4 батча самого северного акселератора инновационных проектов. В рамках интенсивного обучения разработали мобильное приложение - Pocket medic." %}
+                                </p>
+
+                                <!-- Footer -->
+                                <div class="d-flex align-items-center">
+
+                                    <!-- Avatar -->
+                                    <div class="avatar avatar-xs actual-author-avatar">
+                                        <img class="avatar-img rounded-circle"
+                                            src="../../static/assets/img/medic/logo.png" alt="...">
+                                    </div>
+
+                                    <!-- Body -->
+                                    <div class="ml-4 text-left actual-author-content">
+
+                                        <!-- Title -->
+                                        <p class="mb-0 actual-author-title">
+                                            Pocket medic
+                                        </p>
+
+                                        <!-- Position -->
+                                        <p class="small text-muted mt-n1 mb-0 actual-author-subtitle">
+                                            {{ posts.first.first_published_at|date:"d.m.Y H:i"}}
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- Link -->
+                                <a class="stretched-link" href="{{ posts.first.slug }}"></a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
