@@ -29,11 +29,11 @@
                     </a>
                 </li>
                 {% endfor %}
-                <li>
+                {% comment %} <li>
                     <a class="nav-link{% if request.path|slice:"3:" == "/legal-page/" %} actLink{% endif %}" role="button" aria-haspopup="true" aria-expanded="false" href="/{{ LANGUAGE_CODE }}/legal-page">
                         {% trans "Правовая информация" %}
                     </a>
-                </li>
+                </li> {% endcomment %}
                 <li class="dropdown-li">
                     <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         {% trans "Проекты" %}
